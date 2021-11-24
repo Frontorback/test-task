@@ -1,0 +1,255 @@
+.card-pos {
+  margin: 374.52px auto auto 202px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  .hide-card {
+    display: none;
+  }
+  .card-section {
+    width: 350px;
+    height: 341px;
+    background-color: #292a2f;
+    border-radius: 10px;
+    color: white;
+    margin-right: 39px;
+    display: block;
+
+    .card-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 60px 19px 30px;
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      line-height: 20px;
+
+      div:first-child {
+        align-self: center;
+      }
+      div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+      }
+      .card-time {
+        font-family: "Montserrat-Bold";
+        font-size: 20px;
+      }
+    }
+    .border-card {
+      border: 1px solid #f3a917;
+      margin: 0 35.5px;
+    }
+    .card-items-section {
+      margin: 36.5px 33px 30.5px 37px;
+
+      img:first-child {
+        margin-right: 20px;
+      }
+    }
+    .card-name-kef {
+      font-family: "Montserrat-Bold";
+      font-size: 20px;
+      line-height: 35px;
+      div:last-child {
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 30px;
+        border: 1px solid #f3a917;
+      }
+    }
+    .card-name-kef,
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .card-footer,
+    .card-footer-battle {
+      color: #757c84;
+      font-family: "Montserrat-Regular";
+      font-size: 12px;
+      line-height: 20px;
+      img {
+        margin-right: 9px;
+      }
+    }
+  }
+  .whatch-live {
+    display: none;
+  }
+}
+
+.card-section:hover {
+  background-color: rgba(7, 7, 7, 0.76);
+  cursor: pointer;
+  box-shadow: 0 5px 10px 15px rgba(212, 172, 3, 0.45);
+  .whatch-live {
+    display: flex;
+    margin: 153px 91px 148px;
+    position: absolute;
+    background-color: rgba(243, 169, 23, 1);
+    width: 166px;
+    height: 40px;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+      margin: 0 auto;
+      text-decoration: none;
+      color: white;
+
+      img {
+        margin-right: 10px;
+      }
+      div {
+        font-family: "Montserrat-Regular";
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.Card-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 345px;
+  height: 85px;
+  margin: 771.52px auto 147px 788px;
+
+  .prev-btn,
+  .next-btn {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #f3a917;
+    border-radius: 80px;
+    margin: 0 auto;
+    div {
+      background: no-repeat url("../../img/arrow-left.svg");
+      height: 30px;
+      margin: 30% 25%;
+    }
+  }
+
+  .next-btn div {
+    transform: rotate(180deg);
+    margin: 35% 25%;
+  }
+  .card-dots {
+    position: unset;
+    margin: 35px auto;
+  }
+}
+.prev-btn:hover ,
+.next-btn:hover {
+    cursor: pointer;
+    background-color: #f3a917;
+}
+.prev-btn:active ,
+.next-btn:active {
+    cursor: pointer;
+    background-color: black;
+}
+//////// Battles
+.card-pos .card-section .header-buttle {
+  padding-left: 36px;
+}
+.card-name-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 22px;
+
+  .card-match {
+    align-self: center;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #f3a917;
+    padding: 5px 10px;
+  }
+}
+.card-pos .card-section .img-buttles {
+  margin: 32px 35px 46px 36px;
+  img {
+    margin: 7.14px 17.86px;
+  }
+}
+
+.card-footer-battle {
+  margin-top: 10px;
+}
+
+@media (max-width: 1750px) {
+  .card-pos {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 374.52px 202px auto 202px;
+
+    .card-section {
+      width: 353px;
+      height: 235px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      .card-header {
+        padding: 15px 23px 3px 23px;
+        .card-time {
+          font-size: 18px;
+        }
+      }
+      .card-items-section {
+        margin: 19px 23px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        .card-name-kef,
+        .card-footer {
+          margin-top: 11px;
+        }
+        .card-name-kef div:last-child {
+          display: flex;
+          font-size: 14px;
+          line-height: 20px;
+          align-self: center;
+          align-items: center;
+          justify-content: center;
+          width: 58px;
+          height: 30px;
+        }
+        .card-footer img {
+          width: 58px;
+          height: 15px;
+        }
+      }
+    }
+  }
+  .Card-btn {
+    width: 353px;
+    margin-top: 900px;
+    margin-left: 39.3%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .Card-btn {
+    margin-left: 37%;
+  }
+}
+@media (max-width: 1165px) {
+  .Card-btn {
+    margin-top: 1450px;
+    margin-left: 33.5%;
+  }
+}

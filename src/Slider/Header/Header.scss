@@ -1,0 +1,35 @@
+header{
+    position: absolute;
+
+    width: 740px;
+    margin: 13px auto auto 200px;   
+    z-index: 22;
+    .header-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        .logo{
+            margin-bottom: 30px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            height: 64px;
+            align-items: center;
+            margin: 0;
+            li:first-child{
+                margin-right: 41px;
+            }
+            li:nth-child(2){
+                margin-right: 44.78px;
+            }
+            li:nth-child(3){
+                margin-right: 43.28px;
+            }
+        }
+    }
+    .border{
+        border-bottom: 1px solid #F3A917;
+    }
+}

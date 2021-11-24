@@ -1,0 +1,90 @@
+.slider{
+    background-color: black;
+    .active{
+        width: 100%;
+        object-fit: cover;
+        height: 994px;
+        transform: translateX(0%);
+        transition: all 0.5s;
+    }
+    .hide
+    {
+        transform: translateX(110%);    
+          
+    }
+    .first{        
+        background: no-repeat url("../img/first.jpg");
+    }
+    .second{
+        background: no-repeat url("../img/second.jpg");
+    }
+    .last{
+        background: no-repeat url("../img/last.jpg");
+    }
+}
+
+
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin: 747px auto auto 200px;
+    width: 527px;
+    
+    z-index: 2;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    button{
+        font-family: "Montserrat-SemiBold";
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid #F3A917;
+
+    }
+    button:first-child{
+        padding: 15px 27px;
+    }
+    button:last-child{
+        padding: 15px 69px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: #F3A917;
+        a{
+            color: black;
+        }
+        
+    }
+
+}
+
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 950px auto auto 920px;
+    z-index: 2;
+    .dot-item{
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: white;
+        margin-right: 18px;
+        
+    }
+    .dot-item:hover{
+        cursor: pointer;
+    }
+    .dot-item:last-child{
+        margin-right: 0;
+    }
+    .dot-active{
+        background-color: #F3A917;
+    }
+}

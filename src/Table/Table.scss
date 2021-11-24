@@ -1,0 +1,92 @@
+.table-section{
+    background: no-repeat url("../img/LastSection.svg");
+    object-fit: cover;
+    color: white;
+    padding-top: 26.8%;
+    padding-left: 55.625% ;
+
+    .table-head{
+        font-family: "Montserrat-Bold";
+        line-height: 45px;
+        width: 652px;
+        text-align: center  ;
+        
+        h4{
+            margin: 0;
+            font-size: 32px;
+
+        }
+        div{
+            font-size: 25px;
+            margin-bottom: 2px;
+        }
+    }
+    table{
+        border-spacing: 0;
+        tbody tr{
+            td{
+                
+                border: 1px solid #F3A917;
+                background-color:  #292A2F;
+                color: white;
+            }
+            td:first-child{
+                padding:10px 0;
+                text-align: center;
+                font-family: "Montserrat-Regular";
+                font-size: 20px;
+                line-height: 35px;
+            }
+            td:last-child{
+                padding: 10px 0;
+                display: flex;
+                width: 582.41px;
+                font-family: "Montserrat-Medium";
+                font-size: 20px;
+                line-height: 35px;
+                img{
+                    margin-right: 10px;
+                    margin-left: 20px;
+
+                }
+            }
+        }
+        
+        thead{
+            background-color: #F3A917;
+            tr th:first-child{
+                padding: 10px 29.06px;
+            }
+            tr th:last-child{
+                padding: 10px 10.43px;
+                text-align: start;
+            }
+        }
+        
+    }
+    .table-footer{
+        max-width: 506px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 56px 73px;
+        font-family: "Montserrat-Bold";
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+.table-section table tbody .table-active td{
+    background-color: white;
+    color: black;
+}
+tbody:hover{
+    cursor: pointer;
+}
+@media (max-width: 1750px) {
+    .table-section{
+        padding-top: 26.8%;
+        padding-left: 20% ;
+
+    }
+
+}

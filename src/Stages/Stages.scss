@@ -1,0 +1,102 @@
+.stages{
+    height: 519px;
+    background-color: #F3A917;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 200px;
+    .stages-txt{
+        width: 608px;
+        margin-top: 150px;
+        margin-right: 20px;
+        h3{
+            font-family: "Montserrat-Bold";
+            font-size: 32px;
+            line-height: 35px;
+            margin: 0 0 20px 0;
+        }
+        p{
+            
+            font-family: "Montserrat-Medium";
+            font-size: 18px;
+            line-height: 30px;
+            span{
+                color: white;
+            }
+        }
+    }
+
+    .stages-register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+        .stages-dates{
+            display: flex;
+            flex-direction: row;
+            height: 165px;
+            .stages-reg-group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 58.5px;
+
+                img{
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 33px;
+                }
+                .cup-reg{
+                    font-family: "Montserrat-Bold";
+                    margin-bottom: 2px;
+                }
+                div{
+                    font-family: "Montserrat-Regular";
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+               
+               
+                
+            }
+            .stages-reg-group:last-child{
+                margin-right: 0;
+            }
+            .stages-border,
+            .stages-second-border{
+                position: absolute;
+                width: 76px;
+                border-bottom: 4px solid #FFFFFF;
+            }
+            .stages-border{
+                margin: 82.5px auto 82.5px 212.25px ;
+            }
+            .stages-second-border{
+                margin: 82.5px auto 82.5px 500.5px ;
+            }
+        }
+        .stages-reg-btn{
+            background-color: white;
+            display: flex;
+            align-self: center;
+            padding: 17.5px 60px;
+            font-family: "Montserrat-SemiBold";
+            font-size: 16px;
+            line-height: 25px;
+            border-radius: 5px;
+            margin-top: 68px;
+
+            img{
+                margin-right: 10px;
+            }
+        }
+        .stages-reg-btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+        }
+        
+       
+    }
+}

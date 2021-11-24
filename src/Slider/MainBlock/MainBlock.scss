@@ -1,0 +1,19 @@
+.Main-block{
+    position: absolute;
+    max-width: 703px;
+    margin: 268px auto auto 200px;
+    z-index: 2;
+    color: white;
+    font-family: "Montserrat-Bold";
+
+    h1{
+        font-size: 60px;
+        line-height: 73px;  
+        margin: 35px auto 25px auto;
+    }
+    p{
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+    }
+}

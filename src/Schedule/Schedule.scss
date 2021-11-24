@@ -1,0 +1,65 @@
+.schedule-section{
+    height: 1004px;
+    background-color: black;
+    position: relative;
+    .schedule-header{
+        color: white;
+        position: absolute;
+        width: 1518px;
+        margin: 142px auto auto 202px;
+        h2{
+            font-family: "Montserrat-Bold";
+            margin-bottom: 40px;
+        }
+        .schedule-border{
+            border-bottom: 2px solid #F3A917;
+        }
+        .schedule-btns{
+            display: flex;
+            flex-direction: row;
+            button{
+                background-color: rgba(0, 0, 0, 0);
+                color: white;
+                border: 1px solid #F3A917;
+                font-family: "Montserrat-Bold";
+            }
+            .active-btn{
+                background-color: #F3A917;
+            }
+            button:hover{
+                background-color: #c2912f;
+                cursor: pointer;
+            }
+            button:first-child{
+                padding: 15px 35.5px;
+            }
+           
+            button:last-child{
+                padding: 15px 42px;
+            }
+        }
+    }
+    
+}
+@media (max-width: 1750px) {
+    .schedule-section .schedule-header{
+        
+        width: 1200px;
+    }
+}
+@media (max-width: 1450px) {
+    .schedule-section .schedule-header{
+        
+        width: 865px;
+    }
+}
+@media (max-width: 1165px) {
+    .schedule-section {
+        height: 1600px;
+        .schedule-header{
+        
+            width: 530px;
+        }
+    }
+    
+}
